@@ -124,6 +124,7 @@ forest = []
 
 num_trees = 10
 for i in range(num_trees):
+# Randomly split the dataset - 80% training data, 20% testing data
     randoms = np.array(random.sample(range(len(df)), len(df)))
     mask = randoms < int(0.8*len(df))
     
